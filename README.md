@@ -113,7 +113,7 @@ show_sample_images(train_dataset)
 
 
     
-![png](ex4-deep_6_0.png)
+![png](EX4_6_0.png)
     
 
 
@@ -465,8 +465,55 @@ train_model(model, train_loader,test_loader)
     Epoch [59/100], Train Loss: 0.0000, Validation Loss: 14.6626
     Epoch [60/100], Train Loss: 0.8498, Validation Loss: 2.6330
     Epoch [61/100], Train Loss: 0.8661, Validation Loss: 1.8227
+    Epoch [62/100], Train Loss: 0.0000, Validation Loss: 5.3898
+    Epoch [63/100], Train Loss: 0.0000, Validation Loss: 15.2999
+    Epoch [64/100], Train Loss: 0.5023, Validation Loss: 3.8228
+    Epoch [65/100], Train Loss: 0.0000, Validation Loss: 2.6296
+    Epoch [66/100], Train Loss: 0.5938, Validation Loss: 2.5446
+    Epoch [67/100], Train Loss: 0.5938, Validation Loss: 32.1470
+    Epoch [68/100], Train Loss: 1.6910, Validation Loss: 7.5485
+    Epoch [69/100], Train Loss: 0.0000, Validation Loss: 2.9556
+    Epoch [70/100], Train Loss: 0.0000, Validation Loss: 6.1006
+    Epoch [71/100], Train Loss: 1.7545, Validation Loss: 3.9395
+    Epoch [72/100], Train Loss: 0.0000, Validation Loss: 37.8690
+    Epoch [73/100], Train Loss: 1.9126, Validation Loss: 3.5356
+    Epoch [74/100], Train Loss: 0.0000, Validation Loss: 10.3815
+    Epoch [75/100], Train Loss: 0.4890, Validation Loss: 5.1371
+    Epoch [76/100], Train Loss: 0.0000, Validation Loss: 2.3289
+    Epoch [77/100], Train Loss: 0.0000, Validation Loss: 3.2243
+    Epoch [78/100], Train Loss: 0.0000, Validation Loss: 5.2038
+    Epoch [79/100], Train Loss: 0.0000, Validation Loss: 6.5430
+    Epoch [80/100], Train Loss: 0.0000, Validation Loss: 7.3497
+    Epoch [81/100], Train Loss: 0.0000, Validation Loss: 7.7825
+    Epoch [82/100], Train Loss: 0.0000, Validation Loss: 8.0142
+    Epoch [83/100], Train Loss: 0.0000, Validation Loss: 8.1382
+    Epoch [84/100], Train Loss: 0.0000, Validation Loss: 8.2045
+    Epoch [85/100], Train Loss: 0.0000, Validation Loss: 8.2401
+    Epoch [86/100], Train Loss: 0.0000, Validation Loss: 8.2591
+    Epoch [87/100], Train Loss: 0.0000, Validation Loss: 8.2693
+    Epoch [88/100], Train Loss: 0.0000, Validation Loss: 8.2748
+    Epoch [89/100], Train Loss: 0.0000, Validation Loss: 8.2777
+    Epoch [90/100], Train Loss: 0.0000, Validation Loss: 8.2792
+    Epoch [91/100], Train Loss: 0.0000, Validation Loss: 8.2801
+    Epoch [92/100], Train Loss: 0.0000, Validation Loss: 8.2805
+    Epoch [93/100], Train Loss: 0.0000, Validation Loss: 8.2808
+    Epoch [94/100], Train Loss: 0.0000, Validation Loss: 8.2809
+    Epoch [95/100], Train Loss: 0.0000, Validation Loss: 8.2810
+    Epoch [96/100], Train Loss: 0.0000, Validation Loss: 8.2810
+    Epoch [97/100], Train Loss: 0.0000, Validation Loss: 8.2810
+    Epoch [98/100], Train Loss: 0.0000, Validation Loss: 8.2810
+    Epoch [99/100], Train Loss: 0.0000, Validation Loss: 8.2810
+    Epoch [100/100], Train Loss: 0.0000, Validation Loss: 8.2810
+    Name:        Sudharsan S
+    Register Number:        212224040334
     
+
 ```
+    
+![png](EX4_20_1.png)
+    
+
+
 
 ```python
 ## Step 4: Test the Model and Compute Confusion Matrix & Classification Report
@@ -520,6 +567,31 @@ test_model(model, test_loader)
 
 ```
 
+    Test Accuracy: 28.5124
+    Name:        
+    Register Number:        
+    
+
+
+    
+![png](EX4_22_1.png)
+    
+```
+
+    Name:        Sudharsan S
+    Register Number:        212224040334
+    Classification Report:
+                  precision    recall  f1-score   support
+    
+          defect       0.97      0.85      0.90        33
+       notdefect       0.95      0.99      0.97        88
+    
+        accuracy                           0.95       121
+       macro avg       0.96      0.92      0.93       121
+    weighted avg       0.95      0.95      0.95       121
+    
+    
+```
 
 ```python
 ## Step 5: Predict on a Single Image and Display It
@@ -555,10 +627,28 @@ predict_image(model, image_index=85, dataset=test_dataset)
 ```
 
 
+    
+![png](EX4_24_0.png)
+    
+
+
+    Actual: notdefect, Predicted: notdefect
+    
+
+
 ```python
-z#Example Prediction
+#Example Prediction
 predict_image(model, image_index=55, dataset=test_dataset)
 ```
+
+
+    
+![png](EX4_25_0.png)
+    
+
+
+    Actual: notdefect, Predicted: notdefect
+    
 
 
 
