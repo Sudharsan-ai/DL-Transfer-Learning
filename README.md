@@ -3,38 +3,30 @@
 ## AIM
 To develop an image classification model using transfer learning with VGG19 architecture for the given dataset.
 
-## Problem Statement and Dataset
-Include the problem statement and Dataset
+## Problem Statement 
+
+The problem statement for this experiment is to develop an image classification model that can accurately distinguish between 'defect' and 'notdefect' semiconductor chip images. This is a binary classification task, where the goal is to leverage transfer learning using a pre-trained VGG19 model to effectively classify new, unseen chip images.
 
 
 ## Neural Network Model
-Include the neural network model diagram.
+
+<img width="1043" height="802" alt="image" src="https://github.com/user-attachments/assets/e89b0214-396e-402c-9891-22c433677482" />
+
 
 ## DESIGN STEPS
 ### STEP 1: 
-
-Write your own steps
+Import required libraries and define image transforms.
 
 ### STEP 2: 
-
-
-
+Load training and testing datasets using ImageFolder.
 ### STEP 3: 
-
-
-
+Visualize sample images from the dataset.
 ### STEP 4: 
-
-
-
+Load pre-trained VGG19, modify the final layer for binary classification, and freeze feature extractor layers.
 ### STEP 5: 
-
-
-
+Define loss function (BCEWithLogitsLoss) and optimizer (Adam). Train the model and plot the loss curve.
 ### STEP 6: 
-
-
-
+Evaluate the model with test accuracy, confusion matrix, classification report, and visualize predictions.
 
 
 ## PROGRAM
@@ -656,18 +648,30 @@ predict_image(model, image_index=55, dataset=test_dataset)
 ### OUTPUT
 
 ## Training Loss, Validation Loss Vs Iteration Plot
+<img width="686" height="547" alt="image" src="https://github.com/user-attachments/assets/687d99c0-ad43-4d17-9fd3-1e44713d3b27" />
 
-Include your plot here
 
 ## Confusion Matrix
 
-Include confusion matrix here
+<img width="640" height="547" alt="image" src="https://github.com/user-attachments/assets/d5ccf25b-8f1d-40d2-a525-947b2a22b0c4" />
+
 
 ## Classification Report
-Include classification report here
-
+```
+   Name:        Sudharsan S
+    Register Number:        212224040334
+    Classification Report:
+                  precision    recall  f1-score   support
+    
+          defect       0.97      0.85      0.90        33
+       notdefect       0.95      0.99      0.97        88
+    
+        accuracy                           0.95       121
+       macro avg       0.96      0.92      0.93       121
+    weighted avg       0.95      0.95      0.95       121
+```
 ### New Sample Data Prediction
-Include your sample input and output here
+<img width="328" height="371" alt="image" src="https://github.com/user-attachments/assets/0744ea31-71ca-4502-ba30-5dd966348444" />
 
 ## RESULT
-Include your result here
+Thus the python program to develop an image classification model using transfer learning with VGG19 architecture is executed successfully.
